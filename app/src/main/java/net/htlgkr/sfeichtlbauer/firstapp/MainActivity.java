@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int zaehler = Integer.parseInt(zaehl.getText().toString());
         int nenner = Integer.parseInt(nenn.getText().toString());
         int ggt = getGGT(zaehler,nenner);
-        zaehl.setText((zaehler/ggt));
-        nenn.setText((nenner/ggt));
+        int num1 = zaehler/ggt;
+        int num2 = nenner/ggt;
+        zaehl.setText(num1+"");
+        nenn.setText(num2+"");
     }
     public int getGGT(int a, int b){
         int tmp;
